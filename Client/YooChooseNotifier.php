@@ -7,7 +7,18 @@
  */
 namespace EzSystems\RecommendationBundle\Client;
 
-class YooChooseClient implements RecommendationClient
+/**
+ * A recommendation client that sends notifications to the server.
+ */
+class YooChooseNotifier implements RecommendationClient
 {
+    public function update($contentId)
+    {
 
+    }
+
+    public function delete($contentId)
+    {
+
+    }
 }
