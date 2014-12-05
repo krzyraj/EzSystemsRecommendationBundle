@@ -1,0 +1,17 @@
+{
+    "name": "ezsystems/ez-recommendation-bundle",
+    "description": "Integration of YooChoose, a content recommendation solution, into eZ Platform",
+    "require": {
+        "guzzlehttp/guzzle": "~5.0",
+        "ezsystems/ezpublish-kernel": "~5.4 | >=2014.11",
+        "ezsystems/ezpublish-api": "~5.4 | >=2014.11"
+    },
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "eZ Systems Dev Team",
+            "email": "sdk@ez.no"
+        }
+    ],
+    "minimum-stability": "stable"
+}
