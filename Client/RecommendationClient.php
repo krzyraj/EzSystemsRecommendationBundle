@@ -7,9 +7,9 @@
  */
 namespace EzSystems\RecommendationBundle\Client;
 
-use eZ\Publish\API\Repository\Values\Content\Content;
-
 interface RecommendationClient
 {
-    public function notifyContentUpdate( Content $content );
+    public function updateContent($contentId);
+
+    public function deleteContent($contentId);
 }
