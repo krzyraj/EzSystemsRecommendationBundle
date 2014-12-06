@@ -13,7 +13,7 @@ use RuntimeException;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
 /**
- * A recommendation client that sends notifications to the server.
+ * A recommendation client that sends notifications to a YooChoose server.
  */
 class YooChooseNotifier implements RecommendationClient
 {
