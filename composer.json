@@ -13,5 +13,10 @@
             "email": "sdk@ez.no"
         }
     ],
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "EzSystems\\RecommendationBundle\\": ""
+        }
+    }
 }
