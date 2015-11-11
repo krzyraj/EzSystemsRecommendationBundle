@@ -4,7 +4,6 @@
 <phpunit
         backupGlobals="false"
         backupStaticAttributes="false"
-        bootstrap="Tests/bootstrap.php"
         convertErrorsToExceptions="true"
         convertNoticesToExceptions="true"
         convertWarningsToExceptions="true"
@@ -12,7 +11,7 @@
         >
 
     <testsuites>
-        <testsuite name="PlatformUIBundle tests suite">
+        <testsuite name="EzSystemsRecommendationBundle tests suite">
             <directory suffix="Test.php">./Tests</directory>
         </testsuite>
     </testsuites>
