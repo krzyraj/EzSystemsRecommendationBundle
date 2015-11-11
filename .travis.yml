@@ -21,14 +21,14 @@ before_script:
   # Randomize Symfony versions
   - SYMFONY_VERSIONS=("~2.7.0" "~2.6.0" "")
   - SYMFONY_VERSION=${SYMFONY_VERSIONS["`shuf -i 0-2 -n 1`"]}
-  - echo "Symfony version (empty if composer.json default): ${SYMFONY_VERSION}"
+  - echo "$SYMFONY_VERSION"
   - if [ "$SYMFONY_VERSION" != "" ]; then composer require --no-update symfony/symfony=$SYMFONY_VERSION; fi;
   # Install packages using composer
   - composer install --dev --prefer-dist
   # Detecting timezone issues by testing on random timezone
   - TEST_TIMEZONES=("America/New_York" "Asia/Calcutta" "UTC")
   - TEST_TIMEZONE=${TEST_TIMEZONES["`shuf -i 0-2 -n 1`"]}
-  - echo "Time zone: ${TEST_TIMEZONE}"
+  - echo "$TEST_TIMEZONE"
 
 # execute phpunit as the script command
 script: "php -d date.timezone=$TEST_TIMEZONE -d memory_limit=-1 vendor/bin/phpunit"
